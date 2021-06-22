@@ -174,7 +174,8 @@ with mp_hands.Hands(
                         continue
                     cv2.line(frame1,points[i][j][k-1],points[i][j][k],colors[i],2)
                     #cv2.line(image,points[i][j][k-1],points[i][j][k],colors[i],2)
-            
+         
+        frame1 = cv2.resize(frame1,(960,540))
         # Showing the captured frame 
         cv2.imshow("frame",frame1)
         #cv2.imshow("mask",mask)
