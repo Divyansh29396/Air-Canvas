@@ -177,7 +177,7 @@ with mp_hands.Hands(
             
         # Showing the captured frame 
         cv2.imshow("frame",frame1)
-        cv2.imshow("mask",mask)
+        #cv2.imshow("mask",mask)
     
         # Breaking the loop when q is pressed
         if cv2.waitKey(1) & 0xff == ord("q"):
